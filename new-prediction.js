@@ -10,7 +10,7 @@
 // });
 
 auth.onAuthStateChanged(user => {
-    if(!user) window.location.href = "/account.html?new-rd"
+    if(!user) window.location.href = "/predict/account?new-rd"
 });
 
 //Toggle public/private visibility
