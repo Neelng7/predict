@@ -1,0 +1,355 @@
+body {
+    background-color: rgb(250,249,248);
+    font-family:'Times Roman New';  
+    padding: "0.5%";
+    margin: "0.5%";
+    font-weight: bold;
+    text-align: center;
+    color: transparent;
+    user-select: none;
+    overflow-x: hidden;
+}
+.back-blue{
+    background-color: rgb(0, 75, 122);
+}
+p, span, label, legend{
+    color: black;
+}
+b{
+    color: grey;
+    cursor: pointer;
+}
+#search-div>b:hover{
+    color: black;
+}
+div{
+    border-bottom: 30px solid transparent;
+}
+input, #modifyType{
+    height: 30px;
+    width: 150px;
+    background-color: transparent;
+    color: rgb(90, 90, 90);
+    text-align: center;
+    border: 1.5px solid rgb(65, 65, 65);
+}
+#selectTimezone, #selectTimezone2{
+    height: 30px;
+    width: 150px;
+    background-color: transparent;
+    color: rgb(90, 90, 90);
+    text-align: left;
+    border: 1.5px solid rgb(65, 65, 65);
+}
+textarea{
+    vertical-align: middle;
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    border: 1.5px solid rgb(65, 65, 65);
+    resize: vertical;
+}
+textarea:disabled{
+    color: rgb(20, 20, 20) !important;
+}
+#date, .pointer{
+    cursor: pointer;
+}
+.btn{
+    background-color: transparent;
+    color: rgb(90, 90, 90);
+    padding: 7px 16px;
+    text-align: center;
+    font-size: 12px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 1.5px solid rgb(75, 75, 75);
+}
+.predictionSize{
+    font-size: 1cm;
+    height: 2.5cm;
+    width: 7.3cm;
+}
+.hide{
+    display: none;
+}
+#predictionLockedImg{
+    border: 2px solid black;
+}
+header{
+    background-color: rgb(0, 47, 77);
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin-bottom: 400%;
+}
+header > a{
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+    font-size: 100%;
+    text-decoration:none;
+    position: relative;
+}
+a:link, a:active, a:visited{
+    text-decoration: none;
+}
+header > a:hover {
+    color: white;
+}
+h1{
+    color: black;
+}
+#h1main{
+    color: white;
+}
+.selected{
+    color: white;
+    border-bottom: 1px solid white;
+}
+fieldset{
+    text-align: left;
+    border: 2px solid black;
+    width: fit-content;
+    margin: 0 auto;
+}
+.footer{
+    background-color: rgb(0, 47, 77);
+    padding: 0;
+    margin: 0;
+    position:fixed;
+    min-height: 17.5%;
+    max-height: 18.5%;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    text-align: left;
+}
+.footerDiv{
+    padding-left: 10%;
+}
+.footerP{
+    color: rgb(215, 215, 215);
+    padding-left: 1%;
+    position: absolute;
+    bottom: 4%;
+}
+#reportButtonLabel{
+    color: rgb(215, 215, 215);
+}
+#problemButton, #problemButton2, #problemButton3{
+    color: rgb(215, 215, 215);
+    background-color: rgb(0, 59, 95);
+    border: none;
+    cursor: pointer;
+}
+#reportProblem, #reportEmail{
+    color: rgb(215, 215, 215);
+    background-color: rgb(0, 59, 95);
+    border: none;
+    border-bottom: 2px solid rgb(215, 215, 215);
+    width: 15%;
+    height: 30px;
+}
+.publicTagDiv{
+    padding: 0;
+}
+.publicTagDiv2{
+    padding: 0;
+    text-align: left;
+    position: relative;
+    left: var(--tag-x);  
+    width: 320px;
+}
+#unhideTagLabel, #searchFilterLabel{
+    font-size: small;
+    padding: 0;
+    text-align: left;
+}
+#unhideTag, #searchFilter{
+    padding: 0;
+    text-align: left;
+    width: 15px;
+    height: 15px;
+}
+fieldset{
+    border: none;
+    border-top: 2px solid black;
+    width: 40%;
+}
+#search-div{
+    color: black;
+    margin-right:10px;
+}
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.prediction-cards,.report-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 4.5rem;
+}
+.card, .card2, .card3{
+    border: 1px solid black;
+    padding: .4rem;
+    max-width: 320px;
+    color:black;
+    min-width: 310px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: rgb(238, 238, 238);
+}
+.card > .header, .card2 > .header{
+    margin-bottom: .25rem;
+}
+.card > .body, .card2 > .body{
+    font-size: inherit;
+}
+.deleteReport{
+    cursor: pointer;
+}
+#read{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+.count{
+    width: 40px;
+}
+#search{
+    margin-right: 20px;
+}
+#refresh-search, #refresh-search2, #refresh-search3{
+    font-size: 24px;
+    color: gray;
+}
+#refresh-search:hover, #refresh-search2:hover, #refresh-search3:hover, 
+#search-load, #predictionLock{
+    color: black;
+}
+.focus{
+    background-color: rgba(255, 255, 138, 50%);
+}
+.readButon{
+    background: none;
+    border: 1px solid black;
+    padding-block: 4px;
+}
+#showPassword, #showPassword2{
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+#showPassword:hover, #showPassword2:hover{
+    color: black;
+}
+header>b{
+    margin-right: 22vw;
+    float: right;
+    color: white;
+    font-size: 30px;
+    cursor: default;
+}
+.b:hover{
+    color: white;
+}
+#portrait{
+    height: fit-content;
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+#portrait> b{
+    text-align: left;
+}
+#dropdown{
+    flex: 1;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: none; 
+}
+#dropdown-menu{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    left: 0;
+    top: 15%;
+    background: rgb(0, 75, 122);
+}
+li{
+    color: white;
+    list-style-type: none;
+    text-align: left;
+    padding: 22px;
+}
+li:hover{
+    background-color: rgb(54, 108, 190);
+}
+.fieldset{
+    border: 2px solid black;
+    text-align: center;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    width: fit-content;
+}
+#predictionLock2{
+    color: black;
+    padding: 10px;
+}
+.progress-bar{
+    width: 100vw;
+    height: 2px;
+    position: relative;
+    left: -0.5em;
+    background-color: white;
+    border: 0.5px solid #898989;
+    margin: 0;
+    padding: 0;
+}
+.progress-bar::before{
+    content: attr(data-progress);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: calc(var(--width, 0) * 1%);
+    height: 2px;
+    min-width: 0.1rem;
+    max-width: 100%;
+    background-color: #afafaf;
+}
+#modifyInitialDate, #modifyFileRequest,
+#viewInitialDate, #viewFileRequest{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 580px){
+    #modifyInitialDate{max-width: 23em;}
+    #modifyFileRequest{max-width: 22em;}
+    #viewInitialDate{max-width: 23em;}
+    #viewFileRequest{max-width: 22em;}
+}
+@media only screen and (max-width: 520px){
+    #portrait{display:inline}
+    #landscape{display: none;}
+    #prediction-wrapper{display: none;}
+    .progress-bar{top: -15px}
+    .info{display: none;}
+}
+@media only screen and (max-width:615px){
+        #prediction-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 4.5rem;
+    }
+}

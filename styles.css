@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
+body {
+    background-color: var(--background-white);
+    font-family: 'EB Garamond', Garamond;
+    font-weight: 500;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    color: var(--text-color);
+    user-select: none;
+    overflow-x: hidden;
+} 
+:root{
+    --background-white: rgb(250,249,248);
+    --text-color: rgb(55, 55, 55);
+    --header-color: rgb(0, 47, 77);
+    /* --header-color: #2E2E2E; */
+}
+input{
+    color: rgb(80, 80, 80);
+}
+button{
+    color: var(--text-color);
+}
+.fa-eye-slash{
+    position: relative;
+    font-size: 90%;
+}
+main{
+    margin-bottom: 80px;
+}
+main *{
+    color: var(--text-color)
+}
+
+/* Header */
+header{
+    position: absolute;
+    background-color: var(--header-color);
+    width: 100vw;
+    left: 0%;
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+header#landscape{
+    align-items: center;
+    display: flex;
+    gap: calc(100vw - 45em);
+}
+header#portrait{
+    display: none;
+    text-align: left;
+    gap: calc(100vw - 60em);
+}
+header b{
+    font-size: 2rem;
+    padding: 0;
+    color: var(--background-white);
+}
+header button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--background-white);
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    font-size: 2.2rem;
+}
+.page-title{
+    display: inherit;
+    align-items: center;
+    color: var(--background-white);
+}
+.page-title img, header#portrait img{
+    width: 1.75em;
+    height: 1.75em;
+    padding-left: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+}   
+.page-anchors{
+    margin-right: -5vw;
+    color: rgb(215,215,215);
+}
+.page-anchors a{
+    transition: 100ms;
+    margin-inline: calc(5px + 0.5vw);
+}
+.page-anchors > a:hover {
+    color: var(--background-white);
+}
+.selected{
+    color: var(--background-white) !important;
+    border-bottom: 1px solid white;
+}
+
+/* Portrait */
+#dropdown-menu{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 34ch;
+    width: 100vw;
+    left: 0;
+    top: -12rem;
+    background: rgb(0, 75, 122);
+    transition: top 1s;
+}
+#dropdown-menu.menu-open{
+    top: 4.6rem;
+}
+main.menu-open{
+    top: 36ch;
+}
+ul{
+    background-color: rgb(0, 75, 122);
+    margin: 0;
+}
+li{
+    margin: 0;
+    margin-right: 30px;
+    color: var(--background-white);
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+}
+li:hover{
+    background-color: rgb(54, 108, 190);
+}
+
+@media only screen and (max-width: 790px){
+    #portrait{display:inline !important;}
+    header#landscape{display: none;}
+}
+/* Header End */
+
+main{
+    position: relative;
+    top: 0;
+    transition: 1s;
+}
+@media only screen and (min-width: 790px){
+    #dropdown-menu{display: none;}
+    main{top: 0 !important}
+}
+
+.password-reveal{
+    cursor: pointer;
+}
+.btn{
+    border-radius: 25px;
+    border: none;
+    font-size: 85%;
+    background: var(--header-color);
+    padding-inline: 0;
+    padding-block: 4px;
+    min-width: 8em;
+    width: calc(5% + 8em);
+    color: var(--background-white);
+    margin-inline: 0;
+    position: absolute;
+    cursor: pointer;
+    left: calc(47.5% - 4em);
+}
+.inp, textarea{
+    background-color: var(--background-white);
+    border: 1px solid rgba(55, 55, 55, 0.5);
+    border-radius: 5px;
+    padding-block: 4px;
+    padding-inline: 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    vertical-align: middle;
+    resize: vertical;
+}
+#search-load{
+    position: relative;
+}
+.alert{
+    color: red;
+}
+a, a:link, a:active, a:visited{
+    text-decoration: none !important;
+    color: inherit;
+    cursor: pointer;
+}
+.hide{
+    display: none !important;
+}
+
+.new-prediction-container{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+#prediction{
+    margin-top: 3px;
+}
+/* #timezone{
+    width: 22.5ch;
+} */
+pre{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    display: inline;
+}
